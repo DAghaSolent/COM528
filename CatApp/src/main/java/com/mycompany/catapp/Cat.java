@@ -21,12 +21,26 @@ public class Cat {
     
     public void walk()
     {
-        this.weight--;
+        if(this.weight <= 5)
+        {
+            System.out.println("Can't Walk any further.. the poor cat will be starved");
+        }
+        else
+        {
+            this.weight--;
+        }
     }
     
     public void eat()
     {
-        this.weight++;
+        if(this.weight >= 20)
+        {
+            System.out.println("Cat treadmill time");
+        }
+        else
+        {
+            this.weight++;
+        }
     }
 
     public void display()
