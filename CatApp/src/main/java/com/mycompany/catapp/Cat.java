@@ -23,7 +23,7 @@ public class Cat {
     {
         if(this.weight <= 5)
         {
-            System.out.println("Can't Walk any further.. the poor cat will be starved");
+            System.out.println("Can't Walk any further.. the poor cat will be starved ");
         }
         else
         {
@@ -31,15 +31,15 @@ public class Cat {
         }
     }
     
-    public void eat()
+    public void eat(int amount)
     {
         if(this.weight >= 20)
         {
-            System.out.println("Cat treadmill time");
+            System.out.println("Cat treadmill time for" + this.name);
         }
         else
         {
-            this.weight++;
+            this.weight+= amount;
         }
     }
 
