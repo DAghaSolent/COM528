@@ -26,4 +26,14 @@ public class Student {
         System.out.println("Course Mark: "+ this.course_mark);
         System.out.println();
     }
+    
+    public String getName()
+    {
+        return this.name;
+    }
+    
+    public String getCourse_name()
+    {
+        return this.course_name;            
+    }
 }
