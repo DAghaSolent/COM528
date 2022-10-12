@@ -5,15 +5,17 @@
 
 package com.mycompany.question8app;
 import java.util.Scanner;
+import java.util.ArrayList;
 /**
  *
  * @author Danny
  */
 public class Question8App {
-
     public static void main(String[] args) {
         
-        //for(int counter = 1; counter <= 3; counter++)
+        ArrayList<Student> students = new ArrayList<Student>();
+        
+        for(int counter = 1; counter <= 1; counter++)
         {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Please enter your name: ");
@@ -27,13 +29,16 @@ public class Question8App {
             String course_mark = scanner.nextLine();
             double final_mark = Double.parseDouble(course_mark);
             undergrad_info.setMark(final_mark);
-            System.out.println(undergrad_info.getGrade());
-            System.out.println(undergrad_info.didPass());
-            System.out.println(undergrad_info.getName());
-            System.out.println(undergrad_info.getCourse_name());
-            System.out.println(undergrad_info.getClass());
+            //System.out.println(undergrad_info.getGrade());
+            //System.out.println(undergrad_info.didPass());
+            //System.out.println(undergrad_info.getName());
+            //System.out.println(undergrad_info.getCourse_name());
+            //System.out.println(undergrad_info.getClass());
+            students.add(undergrad_info);
         }
-        for (int counter = 1; counter <= 3; counter ++)
+        
+       
+        for (int counter = 1; counter <= 2; counter ++)
         {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Please enter your name: ");
@@ -47,11 +52,20 @@ public class Question8App {
             String course_mark = scanner.nextLine();
             double final_mark =  Double.parseDouble(course_mark);
             masters_info.setMark(final_mark);
-            System.out.println(masters_info.getGrade());
-            System.out.println(masters_info.didPass());
-            System.out.println(masters_info.getName());
-            System.out.println(masters_info.getCourse_name());
-            System.out.println(masters_info.getClass());
+            //System.out.println(masters_info.getGrade());
+            //System.out.println(masters_info.didPass());
+            //System.out.println(masters_info.getName());
+            //System.out.println(masters_info.getCourse_name());
+            //System.out.println(masters_info.getClass());
+            students.add(masters_info);
+        }
+        
+        for(int count=0; count<students.size(); count++)
+        {
+            students.get(count).display();
         }
     }
+    
+
 }
+
