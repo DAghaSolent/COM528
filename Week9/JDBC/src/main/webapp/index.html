@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Add a student</title>
+    </head>
+    <body>
+        <h1>Student Record System</h1>
+        
+        
+        <h2>Add a student </h2>
+
+        <form action="./addStudent.jsp" method="post">
+            <p>Student name:<input type="text" name="name" value="" /></p>
+            <p>Student course:<input type="text" name="course" value="" /></p>
+            <p>Student mark:<input type="text" name="mark" value="" /></p>
+            <p>Student type:
+            <select name='studentType'>
+            <option>Undergraduate</option>
+            <option>Masters</option>
+            </select>
+            </p>
+            <input type="submit" value="Register student!" />
+        </form> 
+        <br />
+        
+        <h2> Search for a student</h2>
+        <form method="get" action="search.jsp">
+        Student name: <input name="name"/>
+        <input type="submit" value="Go!" />
+        </form>
+                             
+        
+    </body>
+</html>
